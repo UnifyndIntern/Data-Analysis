@@ -19,40 +19,6 @@ def td_plot(loc):
     plt.figure(figsize = (100,20))
     sns.pointplot(x = td_columns, y = df_td.iloc[loc, 109:161]) 
     
-def Rent_TD():
-    # Create a figure instance, and the two subplots
-    fig = plt.figure(figsize=(100,20))
-
-    ax1 = fig.add_subplot(211)
-    ax1.set_title("Rent for Different Months")
-    ax1.set_xlabel("Months")
-    ax1.set_ylabel("Rent")
-    
-    ax2 = fig.add_subplot(212)
-    ax2.set_title("Trading Density for Different Months")
-    ax2.set_xlabel("Months")
-    ax2.set_ylabel("Trading Density")
-    
-    sns.pointplot(x = r_columns, y = df_td.iloc[1, 57:109], ax= ax1)
-    sns.pointplot(x = td_columns, y = df_td.iloc[1, 109:161], ax = ax2)
-    
-def Sales_TD():
-    # Create a figure instance, and the two subplots
-    fig = plt.figure(figsize=(100,20))
-
-    ax1 = fig.add_subplot(211)
-    ax1.set_title("Sales for Different Months")
-    ax1.set_xlabel("Months")
-    ax1.set_ylabel("Sales")
-
-    ax2 = fig.add_subplot(212)
-    ax2.set_title("Trading Density for Different Months")
-    ax2.set_xlabel("Months")
-    ax2.set_ylabel("Trading Density")
-    
-    sns.pointplot(x = s_columns, y = df_td.iloc[1, 5:57], ax= ax1)
-    sns.pointplot(x = td_columns, y = df_td.iloc[1, 109:161], ax = ax2)
-
 # Importing Libraries
 import numpy as np
 import pandas as pd
@@ -99,5 +65,13 @@ for x in range(0,52):
 df_td = pd.DataFrame(data = cleaned_data, columns = column_td)
 df_td = df_td.iloc[0:327,:] # Selected 327 rows as the remaining were blank
 
+# Create a figure instance, and the two subplots
+fig = plt.figure(figsize=(100,20))
 
+ax1 = fig.add_subplot(211)
+ax2 = fig.add_subplot(212)
     
+a1 = sns.pointplot(x = s_2013, y = df_td.iloc[1, 5:14], ax= ax1)
+a1.set(ylabel = 'Sales', title = 'Sales for Different Months')
+a2 = sns.pointplot(x = td_columns, y = df_td.iloc[1, 109:161], ax = ax2, xticklabels = [])
+a2.set(xticklabels = [], ylabel = 'Trading Density', title = 'Trading Density for Different Months')
