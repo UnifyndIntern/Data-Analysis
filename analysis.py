@@ -16,9 +16,16 @@ def plot(x,y,hue):
     x = str(x)
     y = str(y)
     hue = str(hue)
-    sns.barplot(x = df[x], y = df[y], hue = df[hue])
+    
+    plt.figure(figsize=(26,14))
+    plt.title(""+x+" analysis for "+y[0:9])
+    plt.ioff()
+    sns.barplot(x = df_td[x], y = df_td[y], hue = df_td[hue],ci = None)
+    plt.savefig(""+x+"/"+x+"wise wrt "+hue+" "+y+".png")
+    plt.close()
+plot('Floor','Sep 2016 \nTD','Format')
 
 # Importing data
 df = pd.read_excel('TD.xlsx')
 
-plot('Format','Nov 2016 \nTD','Floor')
+plot('Floor','Sep 2016 \nTD','Format')

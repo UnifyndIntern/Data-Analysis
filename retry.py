@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Sep 29 17:55:14 2017
+
+@author: Dhaval
+"""
+
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -8,8 +15,6 @@ Created on Fri Sep 22 16:31:39 2017
 # Importing Libraries
 import numpy as np
 import pandas as pd
-import matplotlib
-matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -46,11 +51,11 @@ def r_TD2013(loc):
     ax1 = fig.add_subplot(211)
     ax2 = fig.add_subplot(212)
     
-    a1 = sns.pointplot(x = r_2013, y = df_td.iloc[loc, 57:66], ax= ax1)
+    a1 = sns.pointplot(x = r_2013, y = df_td.iloc[loc, 58:67], ax= ax1)
     a1.set(ylabel = 'Rent', title = 'Rent for Different Months')
-    a2 = sns.pointplot(x = td_2013, y = df_td.iloc[loc, 109:118], ax = ax2)
+    a2 = sns.pointplot(x = td_2013, y = df_td.iloc[loc, 110:119], ax = ax2)
     a2.set(ylabel = 'Trading Density', title = 'Trading Density for Different Months')
-    fig.savefig('Results/'+str(brand[loc])+'/2013/r_TD2013.png')
+    fig.savefig('Results/'+str(brand[loc])+'/r_TD2013.png')
     plt.close()
 
 def r_TD2014(loc):
@@ -60,11 +65,11 @@ def r_TD2014(loc):
 	ax1 = fig.add_subplot(211)
 	ax2 = fig.add_subplot(212)
 
-	a1 = sns.pointplot(x = r_2014, y = df_td.iloc[loc, 66:78], ax= ax1)
+	a1 = sns.pointplot(x = r_2014, y = df_td.iloc[loc, 67:79], ax= ax1)
 	a1.set(ylabel = 'Rent', title = 'Rent for Different Months')
-	a2 = sns.pointplot(x = td_2014, y = df_td.iloc[loc, 118:130], ax = ax2)
+	a2 = sns.pointplot(x = td_2014, y = df_td.iloc[loc, 119:131], ax = ax2)
 	a2.set(ylabel = 'Trading Density', title = 'Trading Density for Different Months')
-	fig.savefig('Results/'+str(brand[loc])+'/2014/r_TD2014.png')
+	fig.savefig('Results/'+str(brand[loc])+'/r_TD2014.png')
 	plt.close()
 
 
@@ -76,11 +81,11 @@ def r_TD2015(loc):
 	ax1 = fig.add_subplot(211)
 	ax2 = fig.add_subplot(212)
 
-	a1 = sns.pointplot(x = r_2015, y = df_td.iloc[loc, 78:90], ax= ax1)
+	a1 = sns.pointplot(x = r_2015, y = df_td.iloc[loc, 79:91], ax= ax1)
 	a1.set(ylabel = 'Rent', title = 'Rent for Different Months')
-	a2 = sns.pointplot(x = td_2015, y = df_td.iloc[loc, 130:142], ax = ax2)
+	a2 = sns.pointplot(x = td_2015, y = df_td.iloc[loc, 131:143], ax = ax2)
 	a2.set(ylabel = 'Trading Density', title = 'Trading Density for Different Months')
-	fig.savefig('Results/'+str(brand[loc])+'/2015/r_TD2015.png')
+	fig.savefig('Results/'+str(brand[loc])+'/r_TD2015.png')
 	plt.close()
 
 def r_TD2016(loc):
@@ -90,11 +95,11 @@ def r_TD2016(loc):
 	ax1 = fig.add_subplot(211)
 	ax2 = fig.add_subplot(212)
 
-	a1 = sns.pointplot(x = r_2016, y = df_td.iloc[loc, 90:102], ax= ax1)
+	a1 = sns.pointplot(x = r_2016, y = df_td.iloc[loc, 91:103], ax= ax1)
 	a1.set(ylabel = 'Rent', title = 'Rent for Different Months')
-	a2 = sns.pointplot(x = td_2016, y = df_td.iloc[loc, 142:154], ax = ax2)
+	a2 = sns.pointplot(x = td_2016, y = df_td.iloc[loc, 143:155], ax = ax2)
 	a2.set(xticklabels = [], ylabel = 'Trading Density', title = 'Trading Density for Different Months')
-	fig.savefig('Results/'+str(brand[loc])+'/2016/r_TD2016.png')
+	fig.savefig('Results/'+str(brand[loc])+'/r_TD2016.png')
 	plt.close()
 
 def r_TD2017(loc):
@@ -104,11 +109,11 @@ def r_TD2017(loc):
 	ax1 = fig.add_subplot(211)
 	ax2 = fig.add_subplot(212)
 
-	a1 = sns.pointplot(x = r_2017, y = df_td.iloc[loc, 102:109], ax= ax1)
-	a1.set(ylabel = 'Sales', title = 'Sales for Different Months')
-	a2 = sns.pointplot(x = td_2017, y = df_td.iloc[loc, 154:161], ax = ax2)
+	a1 = sns.pointplot(x = r_2017, y = df_td.iloc[loc, 103:110], ax= ax1)
+	a1.set(ylabel = 'Sales', title = 'Rent for Different Months')
+	a2 = sns.pointplot(x = td_2017, y = df_td.iloc[loc, 155:162], ax = ax2)
 	a2.set(ylabel = 'Trading Density', title = 'Trading Density for Different Months')
-	fig.savefig('Results/'+str(brand[loc])+'/2017/r_TD2017.png')
+	fig.savefig('Results/'+str(brand[loc])+'/r_TD2017.png')
 	plt.close()
     
 def s_TD2013(loc):
@@ -118,11 +123,11 @@ def s_TD2013(loc):
 	ax1 = fig.add_subplot(211)
 	ax2 = fig.add_subplot(212)
 
-	a1 = sns.pointplot(x = s_2013, y = df_td.iloc[loc, 5:14], ax= ax1)
+	a1 = sns.pointplot(x = s_2013, y = df_td.iloc[loc, 6:15], ax= ax1)
 	a1.set(ylabel = 'Sales', title = 'Sales for Different Months')
-	a2 = sns.pointplot(x = td_2013, y = df_td.iloc[loc, 109:118], ax = ax2)
+	a2 = sns.pointplot(x = td_2013, y = df_td.iloc[loc, 110:119], ax = ax2)
 	a2.set(ylabel = 'Trading Density', title = 'Trading Density for Different Months')
-	fig.savefig('Results/'+str(brand[loc])+'/2013/s_TD2013.png')
+	fig.savefig('Results/'+str(brand[loc])+'/s_TD2013.png')
 	plt.close()
 
 def s_TD2014(loc):
@@ -132,11 +137,11 @@ def s_TD2014(loc):
 	ax1 = fig.add_subplot(211)
 	ax2 = fig.add_subplot(212)
 
-	a1 = sns.pointplot(x = s_2014, y = df_td.iloc[loc, 14:26], ax= ax1)
+	a1 = sns.pointplot(x = s_2014, y = df_td.iloc[loc, 15:27], ax= ax1)
 	a1.set(ylabel = 'Sales', title = 'Sales for Different Months')
-	a2 = sns.pointplot(x = td_2014, y = df_td.iloc[loc, 118:130], ax = ax2)
+	a2 = sns.pointplot(x = td_2014, y = df_td.iloc[loc, 119:131], ax = ax2)
 	a2.set(ylabel = 'Trading Density', title = 'Trading Density for Different Months')
-	fig.savefig('Results/'+str(brand[loc])+'/2014/s_TD2014.png')
+	fig.savefig('Results/'+str(brand[loc])+'/s_TD2014.png')
 	plt.close()
 
 def s_TD2015(loc):
@@ -146,11 +151,11 @@ def s_TD2015(loc):
 	ax1 = fig.add_subplot(211)
 	ax2 = fig.add_subplot(212)
 
-	a1 = sns.pointplot(x = s_2015, y = df_td.iloc[loc, 26:38], ax= ax1)
+	a1 = sns.pointplot(x = s_2015, y = df_td.iloc[loc, 27:39], ax= ax1)
 	a1.set(ylabel = 'Sales', title = 'Sales for Different Months')
-	a2 = sns.pointplot(x = td_2015, y = df_td.iloc[loc, 130:142], ax = ax2)
+	a2 = sns.pointplot(x = td_2015, y = df_td.iloc[loc, 131:143], ax = ax2)
 	a2.set(ylabel = 'Trading Density', title = 'Trading Density for Different Months')
-	fig.savefig('Results/'+str(brand[loc])+'/2015/s_TD2015.png')
+	fig.savefig('Results/'+str(brand[loc])+'/s_TD2015.png')
 	plt.close()
 
 def s_TD2016(loc):
@@ -160,11 +165,11 @@ def s_TD2016(loc):
 	ax1 = fig.add_subplot(211)
 	ax2 = fig.add_subplot(212)
 
-	a1 = sns.pointplot(x = s_2016, y = df_td.iloc[loc, 38:50], ax= ax1)
+	a1 = sns.pointplot(x = s_2016, y = df_td.iloc[loc, 39:51], ax= ax1)
 	a1.set(ylabel = 'Sales', title = 'Sales for Different Months')
-	a2 = sns.pointplot(x = td_2016, y = df_td.iloc[loc, 142:154], ax = ax2)
+	a2 = sns.pointplot(x = td_2016, y = df_td.iloc[loc, 143:155], ax = ax2)
 	a2.set(ylabel = 'Trading Density', title = 'Trading Density for Different Months')
-	fig.savefig('Results/'+str(brand[loc])+'/2016/s_TD2016.png')
+	fig.savefig('Results/'+str(brand[loc])+'/s_TD2016.png')
 	plt.close()
 
 def s_TD2017(loc):
@@ -174,26 +179,42 @@ def s_TD2017(loc):
 	ax1 = fig.add_subplot(211)
 	ax2 = fig.add_subplot(212)
 
-	a1 = sns.pointplot(x = s_2017, y = df_td.iloc[loc, 50:57], ax= ax1)
+	a1 = sns.pointplot(x = s_2017, y = df_td.iloc[loc, 51:58], ax= ax1)
 	a1.set(ylabel = 'Sales', title = 'Sales for Different Months')
-	a2 = sns.pointplot(x = td_2017, y = df_td.iloc[loc, 154:161], ax = ax2)
+	a2 = sns.pointplot(x = td_2017, y = df_td.iloc[loc, 155:162], ax = ax2)
 	a2.set(ylabel = 'Trading Density', title = 'Trading Density for Different Months')
-	fig.savefig('Results/'+str(brand[loc])+'/2017/s_TD2017.png')
+	fig.savefig('Results/'+str(brand[loc])+'/s_TD2017.png')
 	plt.close()
 
-# Importing data
-df = pd.read_excel('Master Sales Data July 2017.xlsx')
+# Plotting for Category, Format and Floor
+def plot(x,y,hue):
+    x = str(x)
+    y = str(y)
+    hue = str(hue)
+    
+    plt.figure(figsize=(26,14))
+    plt.title(""+x+" analysis for "+y[0:9])
+    plt.ioff()
+    sns.barplot(x = df_td[x], y = df_td[y], hue = df_td[hue])
+    plt.savefig(""+x+"/"+x+"wise wrt "+hue+" "+y+".png")
+    plt.close()
+      
+# Importing the data 
+df_td = pd.read_excel('TD.xlsx')
 
-# Delete Unnecessary Columns in Data
-cleaned_data = df.drop(['Sr. No.'], axis = 1)
-cleaned_data.drop(['Yardi - Lease Details'], axis = 1, inplace = True)
-cleaned_data.drop(['Lease Code'], axis = 1, inplace = True)
+df_td_columns = list(df_td.columns)
+s_columns = df_td_columns[6:58]
+r_columns = df_td_columns[58:110]
+td_columns = df_td_columns[110:162]
 
-# List of columns of Old TD and rent
-cleaned_data_columns = list(cleaned_data.columns)
-s_columns = cleaned_data_columns[12:64]
-r_columns = cleaned_data_columns[276:328]
-td_columns = cleaned_data_columns[65:117]
+df_td['Avg 2013 \nTD'] = df_td.iloc[:,110:119].mean(axis = 1)
+df_td['Avg 2014 \nTD'] = df_td.iloc[:,119:131].mean(axis = 1)
+df_td['Avg 2015 \nTD'] = df_td.iloc[:,131:143].mean(axis = 1)
+df_td['Avg 2016 \nTD'] = df_td.iloc[:,143:155].mean(axis = 1)
+df_td['Avg 2017 \nTD'] = df_td.iloc[:,155:162].mean(axis = 1)
+
+analysis_td = df_td_columns[110:167]
+df_td_columns = list(df_td.columns)
 
 # Sales Per Year
 s_2013 = s_columns[0:9]
@@ -218,37 +239,11 @@ td_2015 = td_columns[21:33]
 td_2016 = td_columns[33:45]
 td_2017 = td_columns[45:52]
 td_years = [td_2013, td_2014, td_2015, td_2016, td_2017] 
+
+
 years = ['2013', '2014', '2015', '2016', '2017']
 
-# Replacing 0 With NaN to avoid 'Divide By Zero Error'    
-cleaned_data[s_columns[:]] = cleaned_data[s_columns[:]].replace({0:np.nan})
-cleaned_data[r_columns[:]] = cleaned_data[r_columns[:]].replace({0:np.nan})
-cleaned_data[td_columns[:]] = cleaned_data[td_columns[:]].replace({0:np.nan})
-
-# TD Calculation
-for x in range(0,52):
-    cleaned_data[td_columns[x]] = cleaned_data[td_columns[x]] / cleaned_data[r_columns[x]]
-
-# New Data Frame for TD analysis
-columns = list(cleaned_data.columns)
-column_td = ['Brand Name', 'Floor', 'Format', 'Category - New format', 'Carpet Area']
-
-# Added all columns of Sales to column list
-for x in range(0,52):
-    column_td.append(s_columns[x])
-# Added all columns of Rent to column list
-for x in range(0,52):
-    column_td.append(r_columns[x])
-# Added all columns of TD to column list
-for x in range(0,52):
-    column_td.append(td_columns[x])
-
-df_td = pd.DataFrame(data = cleaned_data, columns = column_td)
-df_td = df_td.iloc[0:327,:] # Selected 327 rows as the remaining were blank
-
-df_td.sort_values(['Brand Name'])
-
-# Creating Folders for all Brands
+# Creating list for all Brands
 brand_dir = []
 brand = []
 for i in df_td['Brand Name']:
@@ -263,33 +258,35 @@ brand.append('Omega Cartier')
 brand.sort()
 brand_dir.sort()
 
-
+# Creating Folders for saving brandwise performance
 import os
-os.system("mkdir Results")
-for x in brand_dir:
-    os.system("mkdir Results/"+str(x))
-    os.system("cd Results/"+str(x))
-    for y in years:
-        os.system("mkdir Results/"+str(x)+"/"+y)
+os.mkdir("Results")
+for x in brand:
+    os.mkdir("Results/"+str(x))
 
+# Creating folders for saving Category, Format and Floorwise performance
+os.mkdir("Category - New format")
+os.mkdir("Format")
+os.mkdir("Floor")
+
+"""
+# os.mkdir solves the problem, no need to perform this
 # Creating Folders for Claire's and Jonah's
 os.mkdir('Results/Claire\'s')
 os.mkdir('Results/Jonah\'s')
 for y in years:
     os.mkdir('Results/Claire\'s/'+y)
     os.mkdir('Results/Jonah\'s/'+y)
+"""
+# Saving graphs for every brand by Rent vs TD and Sales vs TD
+run(0,len(brand))
 
+analysis = ['Floor', 'Format', 'Category - New format']
 
-
-for x in range(0,6):
-    r_TD2013(x)
-    r_TD2014(x)
-    r_TD2015(x)
-    r_TD2016(x)
-    r_TD2017(x)
-    s_TD2013(x)
-    s_TD2014(x)
-    s_TD2015(x)
-    s_TD2016(x)
-    s_TD2017(x)
-
+for y in analysis_td: 
+    plot('Floor',y,'Format')
+    plot('Floor',y,'Category - New format')
+    plot('Format',y,'Floor')
+    plot('Format',y,'Category - New format')
+    plot('Category - New format',y,'Floor')
+    plot('Category - New format',y,'Format')
