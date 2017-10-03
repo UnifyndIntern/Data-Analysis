@@ -1,0 +1,20 @@
+0 -> Books, Music, Toys & Games
+1 -> Cafes, Restaurants, Desserts & Gourmet
+2 -> Cosmetics, Salon, Spas & Optics
+3 -> Department Stores, Mini Department Store
+4 -> Electronics, Gizmos & Gadgets
+5 -> Food Court
+6 -> Foot Fashion, Bags, Luggage & Accessories
+7 -> General Fashion
+8 -> Home Accessories, Gifts & Hobbies
+9 -> Liquor
+10 -> Jewellery
+11 -> Kid's Fashion
+12 -> Hypermarket
+13 -> Men's Fashion
+14 -> Multiplex, FEC & Entertainment 
+15 -> Service
+16 -> Sportswear & Sportsgear
+17 -> Super Premium Fashion Brands
+18 -> Watches & Fashion Accessories
+19 -> Women's Fashion

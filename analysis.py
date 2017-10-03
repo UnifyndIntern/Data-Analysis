@@ -28,4 +28,4 @@ plot('Floor','Sep 2016 \nTD','Format')
 # Importing data
 df = pd.read_excel('TD.xlsx')
 
-plot('Floor','Sep 2016 \nTD','Format')
+plot('Category - New format','Sep 2016 \nTD','Format')

@@ -1,0 +1,11 @@
+0 -> 0
+1 -> Anchor
+2 -> Entertainment
+3 -> F&B
+4 -> Food Court
+5 -> Multiplex
+6 -> Inline
+7 -> Jewellery
+8 -> Kiosk
+9 -> Mini - Anchor
+10 -> Hyper market
